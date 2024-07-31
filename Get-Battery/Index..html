@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Get-Battery</title>  
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
+    <!-- Link to Bootstrap CSS -->  
+    <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="/Assets/Main-Style.css">  
+    
+</head>  
+<body>  
+    <div class="container">
+        <div class="bg-success text-white border rounded shadow m-4 pt-3 pb-3 text-center "> 
+            <h2>Welcome To</h2> 
+            <h4>Test My Battery Simple Web-App</h4>
+        </div>
+        <div class="card col-10 m-4 shadow">
+            <div class="card-header text-center pt-3 bg-info text-white"> <h3>My Device Battery Information</h3>
+            </div>
+            <div class="card-body"> 
+                <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Current Battery Level</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td id="BatteryLevel"> 0%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Current Battery Charging State</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td id="BatteryChargingState">Not Charging Plug in Your Charger</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Battery Discharging State</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td id="BatteryDischargingState">The Device is Plug in and Charging</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Time Remaining Untill Fully charge</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td id="ChargingTimeRemaining"> Not Charging please Plug in Your Charger</td>
+                      </tr>
+                    </tbody>
+                  </table>   
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary shadow" href="/Get-Battery/Index..html">Reload Page</a>
+            </div>
+        </div>
+    </div>
+        
+    <script src="Get-Batery.js"></script> 
+    <!-- Your content goes here -->  
+
+    <!-- Link to Bootstrap JS and dependencies (Popper.js if using tooltips or popovers) -->  
+    <script src="/Assets/js/bootstrap.bundle.min.js"></script> 
+
+</body>  
+</html>
