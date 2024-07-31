@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Get My Location</title>  
+    <!-- Link to Bootstrap CSS -->  
+    <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="/Assets/Main-Style.css">  
+
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+
+        <h1>Coordinate Map Viewer</h1>
+        
+        <div id="coordinateForm">
+            <button class="btn btn-primary" id="getCoordinatesBtn">Get My Location</button>
+            <label for="latitudeInput">Latitude:</label>
+            <input type="text" id="latitudeInput" placeholder="Enter latitude">
+            <label for="longitudeInput">Longitude:</label>
+            <input type="text" id="longitudeInput" placeholder="Enter longitude">
+            <button class="btn btn-primary" id="showMapBtn">Show Map</button>
+        </div>
+        
+    </div>
+    <div id="coordinates"></div>
+    
+    <div id="map"></div>
+  </div>
+
+    
+  <!-- Map JavaScript -->
+  <script src="./Get-Map-GeoLocation.js"></script>
+
+  <!-- Google Maps API script -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGkXa-Dq8A-h7_Tj3q8GlelHA8LxSOmP4&callback=initMap" async defer></script>
+</body>
+</html>
