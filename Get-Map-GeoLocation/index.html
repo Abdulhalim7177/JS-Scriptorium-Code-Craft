@@ -11,25 +11,32 @@
 </head>
 <body>
   <div class="container mt-5">
-    <div class="card">
-
-        <h1>Coordinate Map Viewer</h1>
-        
-        <div id="coordinateForm">
-            <button class="btn btn-primary" id="getCoordinatesBtn">Get My Location</button>
-            <label for="latitudeInput">Latitude:</label>
-            <input type="text" id="latitudeInput" placeholder="Enter latitude">
-            <label for="longitudeInput">Longitude:</label>
-            <input type="text" id="longitudeInput" placeholder="Enter longitude">
-            <button class="btn btn-primary" id="showMapBtn">Show Map</button>
+    <div class="card shadow m-2">
+      <div class="card-header p-3 text-center text-bold">
+        <h2>Coordinate Map Viewer</h3>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Get My Current Location</h5>
+        <p class="card-text">Enter Your Coordinate or Click on the button below the get your Location</p>
+        <div class="form-group">
+          <div id="coordinateForm">
+            <button class="btn btn-primary mb-2" id="getCoordinatesBtn">Get My Location</button>
+            <div class="mb-2">
+              <label for="latitudeInput">Latitude:</label>
+              <input class="form-control" type="text" id="latitudeInput" placeholder="Enter latitude">
+            </div>
+              <div class="mb-3">
+                <label for="longitudeInput">Longitude:</label>
+                <input class="form-control" type="text" id="longitudeInput" placeholder="Enter longitude">
+              </div>
+              <button class="btn btn-primary" id="showMapBtn">Show Map</button>
+          </div>  
         </div>
-        
+      </div>
+      <div id="coordinates" class="card-img-bottom"></div>
+      <div id="map" class="card-img-bottom"></div>
     </div>
-    <div id="coordinates"></div>
-    
-    <div id="map"></div>
-  </div>
-
+</div>
     
   <!-- Map JavaScript -->
   <script src="./Get-Map-GeoLocation.js"></script>
